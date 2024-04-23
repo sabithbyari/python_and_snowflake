@@ -1,0 +1,6 @@
+USE DATABASE myco_db;
+USE SCHEMA myco_db.integrations;
+
+CREATE OR REPALCE TABLE DEMO_GIT AS 
+SELECT current_timestamp AS GMT_DATE, CONVERT_TIMEZONE('Asia/Kolkata', CURRENT_TIMESTAMP()) AS IST_DATE;
+
